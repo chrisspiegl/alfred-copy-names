@@ -18,7 +18,7 @@ This workflow provides this in a few variants.
 
 ## Install
 
-```
+```bash
 npm install --global alfred-copy-names
 ```
 
