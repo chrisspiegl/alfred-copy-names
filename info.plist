@@ -205,7 +205,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Alfred workflow to copy just the file and folder names to your clipboard
+<string>Alfred workflow to copy just the file and/or folder names to your clipboard
 
 https://github.com/chrisspiegl/alfred-copy-names</string>
 	<key>uidata</key>

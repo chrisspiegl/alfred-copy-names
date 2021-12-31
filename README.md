@@ -1,6 +1,6 @@
 # alfred-copy-names
 
-> [Alfred](https://alfredapp.com) workflow to copy just the file and folder names to your clipboard
+> [Alfred](https://alfredapp.com) workflow to copy just the file and/or folder names to your clipboard
 
 <img src="media/screenshot.png" style="width: 100%;">
 

@@ -1,7 +1,7 @@
 {
   "name": "alfred-copy-names",
   "version": "0.0.0",
-  "description": "Alfred workflow to copy just the file and folder names to your clipboard",
+  "description": "Alfred workflow to copy just the file and/or folder names to your clipboard",
   "type": "module",
   "main": "index.js",
   "license": "MIT",
