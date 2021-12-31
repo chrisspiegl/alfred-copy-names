@@ -4,7 +4,10 @@ import alfy from 'alfy';
 import {filterOutput, findFilter, isFileAction} from './src/utils.js';
 
 const {inputWithoutFilter, foundFilter: filter} = findFilter(alfy.input);
-const input = inputWithoutFilter.replaceAll('\t', '\n').split('\n');
+const input = inputWithoutFilter
+  .replaceAll("\t", "\n")
+  .split("\n")
+  .map((element) => element.trim());
 
 const options = [
 	{
@@ -77,7 +80,7 @@ function run(input) {
 	}
 
 	return options.map(options => {
-		const files = input.map(filepath => options.action(filepath.trim())).filter(element => Boolean(element));
+		const files = input.map(filepath => options.action(filepath)).filter(element => Boolean(element));
 		return {
 			title: `${options.prefix}: ${files}`,
 			subtitle: 'Copy to clipboard',

@@ -22,19 +22,12 @@ export function filterOutput(filter, output) {
 }
 
 export function isFileAction(input) {
-	input = Array.isArray(input) ? input : [input];
-	const filePaths = input.map(filepath => {
-		if (filepath.slice(0, 1) !== '/') {
-			return false;
-		}
-
-		const stat = fs.lstatSync(filepath.trim());
-		if (stat.isFile() || stat.isDirectory()) {
-			return true;
-		}
-
-		return false;
-	})
-		.filter(element => Boolean(element));
+	const filePaths = input
+    .filter((element) => Boolean(element.trim()))
+    .filter(filepath => {
+      if (filepath.slice(0, 1) !== '/') return false;
+      const stat = fs.lstatSync(filepath.trim());
+      return (stat.isFile() || stat.isDirectory())
+    })
 	return filePaths.length > 0;
 }
