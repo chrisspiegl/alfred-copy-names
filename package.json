@@ -1,0 +1,50 @@
+{
+  "name": "alfred-copy-names",
+  "version": "0.0.0",
+  "description": "Alfred workflow to copy just the file and folder names to your clipboard",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "chrisspiegl/alfred-copy-names",
+  "author": {
+    "name": "Chris Spiegl",
+    "email": "chris@chrisspiegl.com",
+    "url": "https://chrisspiegl.com/"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup",
+    "cu": "ncu",
+    "cu:fix": "ncu -u",
+    "test": "xo --fix"
+  },
+  "files": [
+    "icon.png",
+    "info.plist",
+    "index.js",
+    "src"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "macos",
+    "mac",
+    "files",
+    "folders",
+    "copy",
+    "pwd",
+    "filename",
+    "filepath",
+    "folderpath"
+  ],
+  "dependencies": {
+    "alfy": "^0.10.0"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^12.0.5",
+    "xo": "^0.47.0"
+  }
+}
