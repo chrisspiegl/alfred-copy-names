@@ -10,7 +10,14 @@
     "url": "https://chrisspiegl.com/"
   },
   "license": "MIT",
-  "repository": "chrisspiegl/alfred-copy-names",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisspiegl/alfred-copy-names.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chrisspiegl/alfred-copy-names/issues"
+  },
+  "homepage": "https://github.com/chrisspiegl/alfred-copy-names#readme",
   "keywords": [
     "alfred",
     "workflow",
