@@ -61,7 +61,7 @@
 	<key>createdby</key>
 	<string>Chris Spiegl</string>
 	<key>description</key>
-	<string></string>
+	<string>Alfred workflow to copy just the file and/or folder names to your clipboard</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -248,5 +248,9 @@ https://github.com/chrisspiegl/alfred-copy-names</string>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
+	<key>version</key>
+	<string>0.0.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/chrisspiegl/alfred-copy-names</string>
 </dict>
 </plist>

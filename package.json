@@ -1,32 +1,16 @@
 {
   "name": "alfred-copy-names",
-  "version": "0.0.1",
-  "description": "Alfred workflow to copy just the file and/or folder names to your clipboard",
   "type": "module",
-  "main": "index.js",
-  "license": "MIT",
-  "repository": "chrisspiegl/alfred-copy-names",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.33.4",
+  "description": "Alfred workflow to copy just the file and/or folder names to your clipboard",
   "author": {
     "name": "Chris Spiegl",
     "email": "chris@chrisspiegl.com",
     "url": "https://chrisspiegl.com/"
   },
-  "engines": {
-    "node": ">=14"
-  },
-  "scripts": {
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup",
-    "cu": "ncu",
-    "cu:fix": "ncu -u",
-    "test": "xo --fix"
-  },
-  "files": [
-    "icon.png",
-    "info.plist",
-    "index.js",
-    "src"
-  ],
+  "license": "MIT",
+  "repository": "chrisspiegl/alfred-copy-names",
   "keywords": [
     "alfred",
     "workflow",
@@ -40,11 +24,28 @@
     "filepath",
     "folderpath"
   ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "info.plist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup",
+    "lint": "eslint .",
+    "test": "node --test",
+    "release": "release-it"
+  },
   "dependencies": {
-    "alfy": "^0.10.0"
+    "alfy": "^3.1.0"
   },
   "devDependencies": {
-    "npm-check-updates": "^12.0.5",
-    "xo": "^0.47.0"
+    "@antfu/eslint-config": "^9.5.1",
+    "eslint": "^10.13.0",
+    "release-it": "^21.1.1"
   }
 }
