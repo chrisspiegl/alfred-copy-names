@@ -17,7 +17,7 @@ Alfred itself provides a file action to copy the file and folder paths. It does 
 
 ## Install
 
-```sh
+```bash
 npm install --global alfred-copy-names
 ```
 
